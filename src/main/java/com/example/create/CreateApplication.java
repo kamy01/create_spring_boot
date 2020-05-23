@@ -9,11 +9,8 @@ public class CreateApplication {
 
     public static void main(String[] args) {
         ApplicationContext applicationContext = SpringApplication.run(CreateApplication.class, args);
+        System.out.println("Hello, the application started");
 
-        for (String beanName : applicationContext.getBeanDefinitionNames()
-        ) {
-            System.out.println("Bean name: " + beanName);
-        }
     }
 
 }
